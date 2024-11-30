@@ -50,6 +50,9 @@ public class HibernateConfig {
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         properties.setProperty("hibernate.show_sql", "true");
+        properties.setProperty("hibernate.connection.CharSet", "utf8mb4");
+        properties.setProperty("hibernate.connection.characterEncoding", "utf8mb4");
+        properties.setProperty("hibernate.connection.useUnicode", "true");
         return properties;
     }
 }
